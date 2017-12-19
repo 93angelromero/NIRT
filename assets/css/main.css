@@ -2938,6 +2938,14 @@
 			width: calc(33.33333% - 2.5em);
 		}
 
+		.split.style2 > :nth-child(2n - 1) {
+			width: calc(50% - 2.5em);
+		}
+
+		.split.style2 > :nth-child(2n) {
+			width: calc(25% - 2.5em);
+		}
+
 		@media screen and (max-width: 1680px) {
 
 			.split > * {
@@ -2960,6 +2968,13 @@
 				width: calc(33.33333% - 2em);
 			}
 
+			.split.style2 > :nth-child(2n - 1) {
+				width: calc(50% - 2.5em);
+			}
+
+			.split.style2 > :nth-child(2n) {
+				width: calc(25% - 2.5em);
+			}
 		}
 
 		@media screen and (max-width: 980px) {
@@ -3917,3 +3932,6 @@
 			}
 
 		}
+#twitter-timeline{
+	width: 240% !important;
+}

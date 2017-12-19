@@ -208,3 +208,39 @@
 	});
 
 })(jQuery);
+
+$('#consend').submit(function(e) {
+	e.preventDefault();
+	var form =  new FormData(document.getElementById("consend"));
+
+	$.ajax({
+		url: "sendc.php",
+		type: "POST",
+		data: form,
+		contentType: false,
+		cache: false,
+		processData:false,
+		success: function(data){
+			console.log(data);
+			envioc(1);
+			if(data.toString()=="0"){
+				$('#consend')[0].reset();
+			  	$('html, body').animate({ scrollTop: $('#anchor').offset().top }, 'slow');
+			 	$(".message").text("Tu mensaje ha sido enviado");
+			  	$(".message").css("color","green");
+			 	$(".message").animate({'opacity':1},2000).delay(1000).animate({'opacity':0},2000);
+			 	setTimeout(function(){
+	        		$(".message").hide();
+	        	},4000);
+			} else{
+				$('html, body').animate({ scrollTop: $('#anchor').offset().top }, 'slow');
+			 	$(".message").text("Ha ocurrido un error al enviar tu mensaje, por favor intentalo de nuevo.");
+			  	$(".message").css("color","red");
+			 	$(".message").animate({'opacity':1},2000).delay(1000).animate({'opacity':0},2000);
+			  	setTimeout(function(){
+	          		$(".message").hide();
+	        	},4000);
+			}
+		}
+	});
+});

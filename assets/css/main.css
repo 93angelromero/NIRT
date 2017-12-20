@@ -1621,7 +1621,7 @@
 	}
 
 	body {
-		background: #312450;
+		background: #1d1f5a;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -1724,10 +1724,10 @@
 		}
 
 			h1.major:after {
-				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -moz-linear-gradient(to right, #1d1f5a, #1bb198);
+				background-image: -webkit-linear-gradient(to right, #1d1f5a, #1bb198);
+				background-image: -ms-linear-gradient(to right, #1d1f5a, #1bb198);
+				background-image: linear-gradient(to right, #1d1f5a, #1bb198);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3271,11 +3271,11 @@
 		}
 
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			background-color: #1d1f5a;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			background-color: #1d1f5a;
 		}
 
 		.wrapper.style2 {
@@ -3402,7 +3402,7 @@
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		background-color: #5e42a6;
+		background-color: #1d1f5a;
 		cursor: default;
 		padding: 1.75em 2em;
 	}
@@ -3941,4 +3941,13 @@
 		}
 #twitter-timeline{
 	width: 240% !important;
+}
+
+.message{
+	width: 400px;
+	word-wrap: break-word;
+}
+
+.anim-slide,.message{
+	opacity:0
 }
